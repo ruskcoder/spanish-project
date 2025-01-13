@@ -1,0 +1,334 @@
+body, html{
+    --underline: white;
+    --link-color: white;
+    overflow-x: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+}
+.text-bold{
+    font-weight: 600;
+
+}
+.w-100{
+    width: 100%;
+
+}
+.text-align-center{
+    text-align: center;
+
+}
+.navbar{
+
+    transition: background-color 0.2s;
+}
+
+.navbar .me-auto .nav-link {
+    transition: color 0.2s;
+}
+
+.navbar .me-auto .nav-item {
+    position: relative;
+    margin: 0px;
+    padding-left: 0px;
+}
+.scrolled{
+    
+}
+.navbar .me-auto .nav-item .nav-link {
+    padding-left: 1px;
+    padding-right: 1px;
+    margin-left: 6px;
+    margin-right: 6px;
+
+
+    display: inline-block;
+    position: relative;
+    color: var(--link-color) !important;
+}
+
+
+.navbar .me-auto .nav-item .nav-link::after {
+    transition: all 0.2s; 
+    top: 2em;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--underline);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar .me-auto .nav-item .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+
+.card-menu {
+    padding-top: 50px;
+
+}
+
+.arrow{
+    top: 85vh;
+    z-index: 1000;
+    color: rgb(132, 132, 132); 
+    position: absolute;
+    transform: translateY(0);
+    animation: updown 3s infinite ease-in-out;
+}
+
+
+@keyframes updown {
+    0% {}
+    50% { transform: translateY(2vh); }
+    100% {}
+}
+.navbar .nav-link{
+    color: var(--link-color) !important;
+}
+#introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+
+      .carousel-item:nth-child(1) {
+        background-image: url('assets/image1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(2) {
+        background-image: url('assets/image2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(3) {
+        background-image: url('assets/image3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+      @media (min-width: 992px) {
+        #introCarousel {
+        }
+      }
+
+.reveal{
+  position: relative;
+  opacity: 0;
+  transition: 1s transform ease, 1s opacity ease;
+}
+
+.reveal.active{
+  transform: translate(0, 0);
+  opacity: 1 ;
+}
+
+.reveal-up{
+    transform: translateY(50px);
+}
+.reveal-right{
+    transform: translateX(100px);
+}
+.reveal-left{
+    transform: translateX(-100px);
+}
+.fs-18{
+    font-size: 1.2vw;
+}
+.load img{
+    display: none;
+}
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    max-height: 175px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.sponsors, .values{
+    padding: 30px;
+    margin-top: 0px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+.img-container .h-80{
+    height: 80%;
+}
+.img-container .h-90{
+    height: 90%;
+}
+.img-container .w-90{
+    width: 90%;
+}
+.values .col{
+    padding: 0px;
+    margin: 10px;
+}
+.hidden{
+    transform: translateY(50px) !important;
+    opacity: 0 !important;
+    position: relative !important;
+    transition: 1s transform ease, 1s opacity ease !important;
+}
+.card, .img-container{
+    transition: 0.3s scale ease, 1s transform ease, 1s opacity ease !important;
+}
+.card:hover, .img-container:hover{
+    scale: 1.1;
+}
+
+.logo-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #6b96c6; */
+    border-radius: 10px;
+    padding: 0px;
+    background-size: cover;
+    background-position: bottom;
+}
+.img-1 {
+    background-image: url('https://erudera.com/media/images/spain-3988367_1920.2e16d0ba.fill-40000x30000.jpg');
+}
+.img-2 {
+    background-image: url('https://cdn.britannica.com/82/146682-050-E4191EF1/village-Sotres-Europa-Peaks-Cantabrian-Mountains-Spain.jpg');
+}
+.img-3 {
+    background-image: url('https://thespanishbiker.wordpress.com/wp-content/uploads/2011/02/rivers-sized1.png?w=640');
+}
+.logo-img img{
+    height: 100%;
+    margin: 0px;
+}
+.contact .row > .sec {
+    height: calc(49vh);
+    
+}
+.form-floating .form-control{
+    height: 3em;
+
+}
+.form-floating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+}
+.form-floating textarea.form-control{
+    height: 8.25em;
+    resize: none;
+    padding-top: 1em;
+}
+.ml-5{
+    margin-left: 3em;
+
+}
+.row .btn{
+    width: 100%
+}
+.icons{
+    width: 12vw;
+
+}
+.sec2 .col{
+    height: 40vh; 
+}
+.maps{
+    overflow: hidden;
+    padding: 0px;
+    width: 24vw;
+}
+.maps img{
+    width: 100%;
+}
+
+.sec2 .col .row{
+    height: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col i{
+    font-size: 1.5em;
+    color: white;   
+    width: auto !important;
+}
+.col .circle{
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(66, 118, 237);
+    margin-top: 10px !important;
+}
+.icon-wrapper{
+    flex-direction: column;
+    height: 100%;
+    padding-top: 0px;
+}
+.icons p{
+    text-align: center;
+    width: 100%;
+}
+.divider{
+    height: 40vh;
+    position: absolute;
+    z-index: 100;
+    border: 1px solid rgb(226, 226, 226);
+    width: 1px;
+    top: 0;
+    transform: translate(50vw, 55vh);
+}
+body{
+    --gallery-image-width:  250px;
+    --gallery-image-height: 250px;
+    --gallery-image-margin: 30px;
+    --gallery-image-count:  4;
+}
+.gallery .row{
+    margin: var(--gallery-image-margin) auto;
+    width: calc(var(--gallery-image-width) * var(--gallery-image-count) + var(--gallery-image-margin) * var(--gallery-image-count));
+}
+.gallery .row .col{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: var(--gallery-image-width);
+    height: var(--gallery-image-height);
+}
+.gallery .row .col img{
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.3s all ease;
+}
+.gallery .row .col img:hover{
+    border-radius: 20px;
+    transform: scale(1.1);
+}
+.schoolpart .card {
+    padding: 0px;
+    margin: 0px 10px; 
+}
+.schools{
+    width: 50%;
+    margin-top: 1.5em;
+}
