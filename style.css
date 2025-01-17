@@ -98,21 +98,21 @@ body, html{
         height: 100vh;
       }
 
-      .carousel-item:nth-child(1) {
+      #introCarousel .carousel-item:nth-child(1) {
         background-image: url('assets/image1.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
       }
 
-      .carousel-item:nth-child(2) {
+      #introCarousel .carousel-item:nth-child(2) {
         background-image: url('assets/image2.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
       }
 
-      .carousel-item:nth-child(3) {
+      #introCarousel .carousel-item:nth-child(3) {
         background-image: url('assets/image3.jpg');
         background-repeat: no-repeat;
         background-size: cover;
@@ -288,7 +288,7 @@ body, html{
     text-align: center;
     width: 100%;
 }
-.divider{
+/* .divider{
     height: 40vh;
     position: absolute;
     z-index: 100;
@@ -296,7 +296,7 @@ body, html{
     width: 1px;
     top: 0;
     transform: translate(50vw, 55vh);
-}
+} */
 body{
     --gallery-image-width:  250px;
     --gallery-image-height: 250px;

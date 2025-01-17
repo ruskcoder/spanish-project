@@ -9,7 +9,7 @@ function onScroll(event) {
 
   }
   else {
-    if (offset + 60 > window.innerHeight / 2 && (['/contact', '/robot'].includes(window.location.pathname.split('.html')[0]))) {
+    if (offset + 60 > window.innerHeight / 2 && location.pathname != "/" && location.pathname != "/index.html") {
       document.getElementsByTagName("nav")[0].style.backgroundColor = "#ffffff";
       $("body").get(0).style.setProperty("--link-color", "black");
       $("body").get(0).style.setProperty("--underline", "black");
