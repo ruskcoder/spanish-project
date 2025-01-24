@@ -212,6 +212,22 @@ body, html{
 .img-3 {
     background-image: url('https://thespanishbiker.wordpress.com/wp-content/uploads/2011/02/rivers-sized1.png?w=640');
 }
+.img-4 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.61);
+    background-image: url('./assets/person.jpg');
+    position: relative;
+    overflow: hidden;
+}
+.img-5 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, 0.61);
+    background-image: url('./assets/book.png');
+    position: relative;
+    overflow: hidden;
+}
 .logo-img img{
     height: 100%;
     margin: 0px;
